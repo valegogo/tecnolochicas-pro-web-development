@@ -1,0 +1,285 @@
+ <DOCTYPE html>
+ <html lang="es">
+ <head>
+<title>pagina 1</title>
+<link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+<style>
+        html, body {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            background: #eeeeee;
+            color: #3a3a3a;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #navigation-bar ul {
+            margin: 0;
+            padding: 0;
+            border: 1px solid #e7e7e7;
+            background-color: #f3f3f3;
+        }
+
+        #navigation-bar li {
+            display: inline-block;
+        }
+
+        #navigation-bar li a {
+            display: block;
+            color: #665;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        #navigation-bar li a:hover:not(.active) {
+            background-color: #ddd;
+        }
+
+        #navigation-bar li a.active {
+            color: #fff;
+            background-color: #665;
+        }
+
+        #navigation-bar .menu__hamburger-icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            #navigation-bar li:not(:first-child) {
+                display: none;
+            }
+            #navigation-bar li.menu__hamburger-icon {
+                display: block;
+                float: right;
+            }
+            #navigation-bar.responsive {
+                position: relative;
+            }
+            #navigation-bar.responsive .menu__hamburger-icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            #navigation-bar.responsive .menu__hamburger-icon a {
+                color: #fff;
+            }
+            #navigation-bar.responsive li {
+                float: none;
+                display: block !important;
+            }
+            #navigation-bar.responsive li a{
+                text-align: left;
+            }
+        }
+
+        #main-content-container {
+            display: flex;
+        }
+
+        #links-sidebar {
+            flex: 2;
+            background: pink
+        }
+
+        #main-content {
+            flex: 6;
+            padding: 10px 20% 10px 10px;
+        }
+
+        .main-content__img--full-width {
+            width: 100%;
+        }
+
+        #footer {
+            padding: 0 20px 20px 0;
+            margin-top: auto;
+            display: flex;
+            background:#dfe2e6;
+        }
+
+        .footer__section {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .social__networks {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .social__network {
+            display: flex;
+            align-items: center;
+        }
+
+        .social__icon {
+            font-size: 32px;
+        }
+
+        .social__icon-handler {
+            margin-left: 10px;
+        }
+
+        input[type=email], textarea {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 3px solid #ccc;
+            transition: 0.5s;
+            outline: none;
+        }
+
+        input[type=email]:focus, textarea:focus {
+            border: 3px solid #555;
+        }
+
+        input[type=submit] {
+            background: #666655;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+    </style>
+
+</head>
+
+<body style="margin:0px;background: #B4C6E4;">
+
+
+<h1 style="
+    text-align: center;
+    background-color: 8D91C7;
+    color: wheat;
+    padding: 40px;
+    width:100%;
+    margin:0px;
+    
+">INSTRUMENTOS</h1>
+<p style="
+    text-align: center;
+    color: #d3ebe7;
+    background: #8c8dbd;
+    margin: 0px;
+    width:100%;
+    padding: 20px;
+    font-size: 17;
+">Valentina Gomez Gonzalez</p>
+
+
+<nav id="navigation-bar" class="navigation-bar">
+    <ul>
+         <li><a href="https://www.superprof.mx/blog/diez-estrellas-piano-y-cancion/"> artistas  </a></li>
+         <li><a href="https://filarmonicadecuernavaca.com/2016/06/21/el-origen-de-los-instrumentos-musicales/#:~:text=Lo%20cierto%20es%20que%20el,a%2060.000%20a%C3%B1os%20de%20antig%C3%BCedad."> origen  </a></li>
+         <li><a href="https://cdn.thinglink.me/api/image/509750779020574721/1024/10/scaletowidth"> tipos de intrumentos  </a></li>
+   
+   </ul>
+</nav > 
+<div id="main-content-container" style="
+    display: flex;">
+
+<aside id="links-sidebar" style="
+    flex: 2;
+    background: #7b7b9e;
+    padding-right: 90;
+    text-align: center;
+">MENU</aside>
+
+
+<section id="main-content">
+ 
+
+<div class="artículos">
+</div>
+     
+ 
+ <div class="secciones" style="
+    background: #6A8D92;
+    width: 190px;
+    display:none;
+"> 
+ 
+</div>
+                            
+<div><img src="img/intrumentos.jpg" style="
+    align-items: center;
+    height: 400;
+    width: 600;
+    margin-left: 150;
+    margin-top:9px;
+">
+<div align="left" style="
+    margin-left: 60;
+    color: black;
+    margin-top: 40;
+    font-size: 20px;
+    font-family: ui-sans-serif;
+">Con origen en el vocablo latino instrumentum, instrumento es una palabra que describe el elemento que, al ser combinado con otras piezas, sirve en el ámbito de los oficios o las artes para determinados propósitos. El término puede aprovecharse como sinónimo de herramienta, máquina o utensilio.</div>
+
+
+<footer id="footer">
+    <div class="footer__contact-form footer__section">
+        <h2>Contacto</h2>
+        <div>
+            <form>
+                <label for="contactEmail"> Correo electronico:</label>
+                <input id="contactEmail" required="" type="email" placeholder="Ingresa tu correo electronico">
+
+                <label for="contactMessage"> Mensaje:</label>
+                <textarea id="contactMessage" required="" rows="4" cols="50"> </textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+
+<div class="footer__social footer__section">
+        <h2>Mis redes</h2>
+
+        <div class="social__networks">
+            <div class="social__network">
+                <span class="social__icon-container"><i class="lni lni-instagram-original"></i></span>
+                <span class="social__icon-handler"> <a href="https://www.instagram.com/vale_07go/">vale_07go </a> </span>
+            </div>
+
+            <div class="social__network">
+                <span class="social__icon-container"><i class="lni lni-spotify-original"></i></span>
+                <span class="social__icon-handler">
+                    <a href=>valespotify </a>
+                </span>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>
